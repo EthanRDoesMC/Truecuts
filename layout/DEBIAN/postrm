@@ -1,0 +1,9 @@
+#!/bin/bash
+
+echo Closing Shortcuts...
+killall -9 Shortcuts
+
+echo Closing the Shortcuts Actions service...
+killall -9 siriactionsd
+
+exit 0
