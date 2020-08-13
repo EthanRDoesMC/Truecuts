@@ -7,3 +7,13 @@
 return YES;
 }
 %end
+
+@interface WFSharingSettings : NSObject
++(BOOL)shortcutFileSharingEnabled;
+@end
+
+%hook WFSharingSettings
++(BOOL)shortcutFileSharingEnabled {
+return YES;
+}
+%end
